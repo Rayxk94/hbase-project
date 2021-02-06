@@ -20,7 +20,7 @@
         <scala.version>2.12.10</scala.version>
         <kafka.version>2.2.1</kafka.version>
         <hbase.version>1.2.0-cdh5.16.2</hbase.version>
-        <elasticsearch.version>7.3.2</elasticsearch.version>
+        <elasticsearch.version>7.9.3</elasticsearch.version>
     </properties>
 
     <repositories>
@@ -65,6 +65,7 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>3.11</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 

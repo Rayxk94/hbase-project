@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class HBaseUtilsTest {
 
-    final String zookeeperQuorum = "bigdatatest02";
+    final String zookeeperQuorum = "bigdata";
 
     @Before
     public void setUp() throws Exception {

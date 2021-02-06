@@ -19,7 +19,7 @@ public class ESUtils {
     // ElasticSearch的host
     public static String nodeHost;
     // ElasticSearch的端口（Java API用的是Transport端口，也就是TCP）
-    public static int nodePort;
+    public static int nodePort = 9200;
     // ElasticSearch的索引名称
     public static String indexName;
 
@@ -30,7 +30,7 @@ public class ESUtils {
      */
     public static void iniClient() {
         client = new RestHighLevelClient(RestClient.builder(
-                new HttpHost("localhost", 9200, "http")
+                new HttpHost(nodeHost, nodePort, "http")
         ));
     }
 
