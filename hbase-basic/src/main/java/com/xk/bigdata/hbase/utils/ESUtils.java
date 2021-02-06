@@ -49,8 +49,11 @@ public class ESUtils {
         return StringUtils.join(fields, ", ");
     }
 
+    /**
+     * 关闭客户端
+     */
     public static void stopClient() throws IOException {
-        if (null != client){
+        if (null != client) {
             client.close();
         }
     }
